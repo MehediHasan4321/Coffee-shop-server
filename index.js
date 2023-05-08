@@ -4,7 +4,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const app = express()
 require('dotenv').config()
 const port = process.env.PORT || 5000;
-
+const footerContent = require('./footer.json')
 // Medalware
 app.use(cors())
 app.use(express.json())
@@ -24,6 +24,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     const coffeeCollection = client.db('coffeeDB').collection('coffee')
+    const footerContent = client.db('coffeeDB').collection('footer')
 
     app.get('/coffees', async (req, res) => {
       const cursor = coffeeCollection.find()
@@ -86,6 +87,9 @@ async function run() {
 }
 run().catch(console.dir);
 
+app.get('/footer',(req,res)=>{
+  res.send(footerContent)
+})
 
 app.get('/', (req, res) => {
   res.send('Coffee Shop Server is Running')
