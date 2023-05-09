@@ -1,0 +1,27 @@
+{
+    "brand_name": "Coffee Shop",
+    "brand_logo": "https://i.ibb.co/FmPwFK2/logo1.png",
+    "header_bg": "https://i.ibb.co/Vt7XJN8/15.jpg",
+    "header_links": [
+        {
+            "link_name": "Coffee",
+            "link": "/",
+            "id":"link_001"
+        },
+        {
+            "link_name": "Add Coffee",
+            "link": "/addCoffee",
+            "id":"link_002"
+        },
+        {
+            "link_name": "About",
+            "link": "/",
+            "id":"link_003"
+        },
+        {
+            "link_name": "Contact Us",
+            "link": "/",
+            "id":"link_004"
+        }
+    ]
+}

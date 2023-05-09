@@ -5,6 +5,8 @@ const app = express()
 require('dotenv').config()
 const port = process.env.PORT || 5000;
 const footerContent = require('./footer.json')
+const instragramImages = require('./instImages')
+const headerContent = require('./header.json')
 // Medalware
 app.use(cors())
 app.use(express.json())
@@ -91,11 +93,21 @@ app.get('/footer',(req,res)=>{
   res.send(footerContent)
 })
 
+app.get('/instaImg',(req,res)=>{
+  res.send(instragramImages)
+  console.log("instragramImages")
+})
 app.get('/', (req, res) => {
   res.send('Coffee Shop Server is Running')
 })
 
-
+app.get('/header',(req,res)=>{
+  res.send(headerContent)
+})
+const bannerContent = require('./banner.json')
+app.get('/banner',(req,res)=>{
+  res.send(bannerContent)
+})
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`)
 })
