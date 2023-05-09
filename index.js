@@ -95,7 +95,7 @@ app.get('/footer',(req,res)=>{
 
 app.get('/instaImg',(req,res)=>{
   res.send(instragramImages)
-  console.log("instragramImages")
+  
 })
 app.get('/', (req, res) => {
   res.send('Coffee Shop Server is Running')
