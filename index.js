@@ -108,6 +108,11 @@ const bannerContent = require('./banner.json')
 app.get('/banner',(req,res)=>{
   res.send(bannerContent)
 })
+const feature = require('./features.json')
+app.get('/feature',(req,res)=>{
+  res.send(feature)
+})
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`)
 })

@@ -1,0 +1,27 @@
+[
+    {
+        "id":"fea_001",
+        "img":"https://i.ibb.co/4s0nP5q/1.png",
+        "title":"Awesome Aroma",
+        "description":"You will definitely be a fan of the design & aroma of your coffee"
+    },
+    {
+        "id":"fea_002",
+        "img":"https://i.ibb.co/4s0nP5q/1.png",
+        "title":"High Quality",
+        "description":"We served the coffee to you maintaining the best quality"
+    },
+    {
+        "id":"fea_003",
+        "img":"https://i.ibb.co/xYjm2sB/3.png",
+        "title":"Pure Greadsf",
+        "description":"The coffee is made of the green coffee beans which you will love"
+    },
+    {
+        "id":"fea_004",
+        "img":"https://i.ibb.co/bLHjjwC/4.png",
+        "title":"Proper Roasting",
+        "description":"Your coffee is brewed by first roasting the green coffee beans"
+    }
+]
+
